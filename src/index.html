@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lead</title>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    <section class="promo">
+
+        <div class="promo__wrapper">
+            <div class="promo__header">
+                <img class='promo__header-left' src="img/Vector-Left.png" alt="left">
+                <img class='promo__header-right' src="img/Vector-Right.png" alt="right">
+
+            </div>
+        </div>
+
+        <div class="container">
+            <a href="#" class="promo__logo">
+                <img class="promo__logo-img" src="icons/logo.svg" alt="logo">
+            </a>
+            <div class="promo__title">
+                Under Construction
+            </div>
+            <div class="promo__subtitle">
+                We're making lots of improvements and will be back soon
+            </div>
+            <div class="promo__timer">
+                <div class="timer">
+                    <div class="timer__block">
+                        <span id="days">12</span>
+                        <div class="timer__block-text">Days</div>
+                        <div class="timer__block-text-2">DD</div>
+
+                        <div>
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="icons/time-768.svg">
+                                <source media="(min-width: 769px)" srcset="icons/time.svg">
+                                <img src="icons/time.svg" alt="time">
+                            </picture>                    
+                        </div>
+                    </div>
+                    <div class="timer__tire">
+                        <span>:</span>
+                    </div>
+                    <div class="timer__block">
+                        <span id="hours">20</span>
+                        <div class="timer__block-text">Hours</div>
+                        <div class="timer__block-text-2">HH</div>
+
+                        <div>
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="icons/time-768.svg">
+                                <source media="(min-width: 769px)" srcset="icons/time.svg">
+                                <img src="icons/time.svg" alt="time">
+                            </picture>                   
+                        </div>
+                    </div>
+                    <div class="timer__tire">
+                        <span>:</span>
+                    </div>
+                    <div class="timer__block">
+                        <span id="minutes">56</span>
+                        <div class="timer__block-text">Minutes</div>
+                        <div class="timer__block-text-2">MM</div>
+
+                        <div>
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="icons/time-768.svg">
+                                <source media="(min-width: 769px)" srcset="icons/time.svg">
+                                <img src="icons/time.svg" alt="time">
+                            </picture>                   
+                        </div>
+                    </div>
+                    <div class="timer__tire">
+                        <span>:</span>
+                    </div>
+                    <div class="timer__block">
+                        <span id="seconds">20</span>
+                        <div class="timer__block-text">Seconds</div>
+                        <div class="timer__block-text-2">SS</div>
+                        <div>
+                            <!-- <img src="icons/time.svg" alt="time"> -->
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="icons/time-768.svg">
+                                <source media="(min-width: 769px)" srcset="icons/time.svg">
+                                <img src="icons/time.svg" alt="time">
+                            </picture>                 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="promo__desc">
+                Check our event page when you wait:
+            </div>
+            <a href="https://t.me/dionris" class="promo__btn-text">
+                Go to the event
+                <img class="btn" src="icons/arrow.svg" alt="arrow">
+            </a>
+        </div>
+
+        <div class="promo__footer">
+            <form class="promo__footer-form">
+                <input type="email" name="email" placeholder="Enter your Email and get notified" >
+                <button data-modal class="button" type="submit">                    
+                    <img src="icons/arrow.svg" alt="arrow">
+                </button>
+            </form>
+        </div>
+
+    </section>
+
+
+    <div class="overlay"  id="thanks">
+        <div class="overlay__modal">
+            <div data-close class="overlay__modal-close">
+                <img src="icons/Group.svg" alt="cross">
+            </div>
+            <div class="overlay__modal-subtitle">
+                SUCCESS!
+            </div>
+            <div class="overlay__modal-descr">
+                You have successfully subscribed
+                <br>
+                to the email newsletter
+            </div>
+            <button data-close class="overlay__modal-button">Close</button>
+        </div>
+    </div>
+
+    <div class="overlay"  id="fail">
+        <div class="overlay__modal">
+            <div data-close class="overlay__modal-close">
+                <img src="icons/Group.svg" alt="cross">
+            </div>
+            <div class="overlay__modal-subtitle">
+                Fail!
+            </div>
+            <div class="overlay__modal-descr">
+                You not have successfully subscribed
+                <br>
+                to the email newsletter
+            </div>
+            <button data-close class="overlay__modal-button">Close</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src='js/jquery.validate.min.js'></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

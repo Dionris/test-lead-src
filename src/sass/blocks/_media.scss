@@ -1,0 +1,185 @@
+@media (max-width: 1024px) {
+
+    .promo {
+        &__header {
+            &-left{
+                width: 400px;
+                height: 370px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        max-width: 540px;
+    }  
+
+    .promo {
+        min-height: 860px;
+
+        &__header {
+            &-left{
+                width: 248px;
+                height: 208px;
+            }
+            &-right{
+                width: 200px;
+                height: 240px;
+            }
+        }  
+    
+        &__logo {
+            &-img {
+                padding-top: 100px;    
+            }
+        }
+        &__title {
+            padding-top: 166px;  
+            font-size: 36px;
+            text-shadow: none; 
+        }
+        &__subtitle {
+            padding-top: 20px;
+
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.8);
+            text-shadow: none; 
+            width: 286px;
+        }
+        &__timer {
+            margin: 40px auto 0 auto;
+            
+            height: 82px;
+            width: 358px;
+    
+            .timer {                
+                &__block, &__tire {
+                    position: relative;
+                    width: 44px;
+                    height: 44px;
+                    span {
+                        margin-bottom: 20px;
+                        font-size: 36px;
+                    }
+                    &-text {
+                        display: none;
+                    }
+                    &-text-2 {
+                        font-size: 12px;
+                        display: block;
+                    }
+                    img {
+                        transform: translate(-50%, -70%);
+                        height: 44px;
+                        width: 70px;
+
+                    }
+                }
+                &__tire {
+                    width: 10px;
+                }
+            }
+        }
+        &__desc {
+            margin: 40px auto 0 auto;
+            width: 300px;
+            font-size: 16px;
+        }
+        &__btn-text {
+            margin: 15px auto 76px auto;    
+        } 
+        
+        
+    
+
+        &__footer {
+            height: 160px;
+            padding-top: 60px;
+            &-form {
+                width: 360px;  
+                input {
+                    height: 40px;
+                    width: 360px;
+                    font-size: 14px;
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+
+                }
+                button {
+                    width: 33px;
+                    height: 33px;
+                    top: 4px; 
+                    right: 4px;
+                    img {
+                        margin: 7px;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width: 360px) {
+    .container {
+        width: 100%;
+        padding: 0 5px;
+    }
+    .promo {
+        min-height: 670px;
+        &__header {
+            &-left{
+                width: 173px;
+                height: 142px;
+            }
+            &-right{
+                width: 154px;
+                height: 147px;
+            }
+        }  
+        &__logo {
+            &-img {
+                padding-top: 80px;  
+                width: 120px;
+                img {
+                    width: 128px;
+                    height: 40px;
+                }
+            }
+        }
+        &__title {
+            padding-top: 66px;  
+            font-size: 36px;
+            text-shadow: none; 
+        }
+        &__subtitle {
+            padding-top: 16px;
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.8);
+            text-shadow: none; 
+            width: 286px;
+        }
+        &__timer {          
+            height: 82px;
+            width: 310px;
+        }
+        &__footer {
+            height: 140px;
+            padding-top: 50px;
+            &-form {
+                width: 280px;  
+                input {
+                    width: 280px;
+                }
+                button {
+                    top: 4px; 
+                    right: 4px;
+                }
+            }
+        }
+    }   
+}
